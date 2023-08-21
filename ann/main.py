@@ -23,8 +23,8 @@ X_train, X_test, y_train, y_test, scaler_X, scaler_y = initial_setup(X, Y,
 
 # Compile and fit the model
 history, model, params = fit_model(X_train, y_train,
-                                   units=50, layers=3, activation='tanh', lr=5e-4,
-                                   epochs=200, batch_size=200, val_frac=0.2, l2=1e-10,
+                                   units=40, layers=2, activation='tanh', lr=1e-3,
+                                   epochs=5000, batch_size=200, val_frac=0.0, l2=1e-10,
                                    verbose=1)
 
 # Calculate the MAPE for the training set
