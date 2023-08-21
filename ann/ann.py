@@ -72,7 +72,7 @@ def fit_model(X_train, Y_train,
 
     Args:
         X_train and Y_train: Features and target values of the training set
-        units (int): Number of units of the first hidden layer
+        units (int): Number of units in the hidden layer
         layers (int): Number of layers in the NN
         activation (string): Activation function of the hidden layers
         epochs (int): Number of iterations
