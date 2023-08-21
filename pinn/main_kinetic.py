@@ -26,7 +26,7 @@ class parameters():
 prm = parameters()
 
 # Data
-files = ['../database/kinetic_data.csv']
+files = ['../database/kinetic_database.csv']
 
 X, Y, idx_C, idx_y0 = gather_data(files, 10)
 
