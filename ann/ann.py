@@ -1,6 +1,7 @@
 # ============================================================================
 # Neural Network functions using TensorFlow and Keras
 # Author : Valérie Bibeau, Polytechnique Montréal, H4ck4th0n 2023
+# ANN with N features and 1 output.
 # ============================================================================
 
 # ---------------------------------------------------------------------------
