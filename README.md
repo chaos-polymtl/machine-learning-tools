@@ -19,12 +19,13 @@ Within the `ann` folder, a Python file `grid_search.py` is included to show an e
 
 In the folder `pinn`, the Python file `pinn.py` contains the definition of the functions used to build a PINN model. The PINN is built for a set of ODEs describing the molar balance of chemical species. The ODEs depends on rate constants $k$. The set of reactions at study is:
 
-$A \leftrightarrow C + B$
+$A \leftrightarrow C + B$ and
+
 $C \leftrightarrow D$
 
 The PINN tries to identify 4 kinetic constants ($k_1$, $k_2$, $k_3$ and $k_4$) of the above reactions. The PINN model is coded using the [PyTorch](https://pytorch.org/) library.
 
-- The class `PINeuralNet` uses the base class `torch.nn.Module`. It allows to built the architecture, set up the 4 parameters and define the forward pass.
+- The class `PINeuralNet` uses the base class `torch.nn.Module`. It allows to build the architecture, set up the 4 parameters and define the forward pass.
 - The class `Curiosity` (named after the rover [Curiosity](https://mars.nasa.gov/msl/home/) from NASA that went on planet Mars to discover some wonders) trains the PINN model. The loss function is define in this class. Note that Curiosity can be easily change to satisfy any kind of ODEs.
 
 Other files goes with the PINN model:
